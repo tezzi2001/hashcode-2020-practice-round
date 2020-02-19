@@ -16,4 +16,8 @@ public class OutputForm {
         stream(typesOfPizza).forEach(type -> stringBuilder.append(type).append(" "));
         return stringBuilder.deleteCharAt(stringBuilder.length()-1).toString();
     }
+
+    public int length() {
+        return typesOfPizza.length;
+    }
 }

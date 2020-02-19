@@ -12,7 +12,7 @@ public class Printer {
         File file = new File("src/main/resources/" + fileName + ".out");
 
         try(PrintWriter writer = new PrintWriter(file)) {
-            writer.print(form.getTypesOfPizza().length);
+            writer.print(form.length());
             writer.print(System.lineSeparator());
             writer.print(form);
         } catch (IOException e) {
