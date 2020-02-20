@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 @UtilityClass
 public class Printer {
     public void print(OutputForm form, String fileName) {
-        File file = new File("src/main/resources/" + fileName + ".out");
+        File file = new File("src/main/resources/output/" + fileName);
 
         try(PrintWriter writer = new PrintWriter(file)) {
             writer.print(form.length());
